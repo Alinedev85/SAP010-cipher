@@ -2,7 +2,7 @@
 
 1. Produto
 2. Tecnologias Utilizadas
-3. Configuração](#3-Configuração
+3. Configuração
 4. O produto criado está resolvendo os problemas?
 5. Especificações Técnicas
 
