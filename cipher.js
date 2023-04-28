@@ -13,9 +13,10 @@ const cipher = {
 
         if (caractere.match(/[A-Z]/i)) { //maiúscula, match=comparação 
           const codigo = texto.charCodeAt(i);
+          if (codigo >= 65 && codigo <= 90);
           caractere = String.fromCharCode(((codigo + 65 + chave) % 26) + 65);/* se vdd, ASCII - 65= letra alfabeto o resultado usa o operador modulo(%) para que esteja dentro do alfabeto*/
         } else if (caractere.match(/[a-z]/i)) {
-          const codigo = texto.charCodeAt(i);
+          (codigo >= 97 && codigo <= 122);
           caractere = String.fromCharCode(((codigo + 97 + chave) % 26) + 97);
         }
 
@@ -39,10 +40,10 @@ const cipher = {
         if (caractere.match(/[A-Z]/i)) {
           const codigo = texto.charCodeAt(i);
           if (codigo >= 65 && codigo <= 90);
-            caractere = String.fromCharCode(((codigo + 65 - chave + 26) % 26) + 65);
+          caractere = String.fromCharCode(((codigo + 65 - chave + 26) % 26) + 65);
         } else if (caractere.match(/[a-z]/i)) {
-          if (codigo >= 97 && codigo <= 122);
-            caractere = String.fromCharCode(((codigo - 97 - chave + 26) % 26) + 97);
+          (codigo >= 97 && codigo <= 122);
+          caractere = String.fromCharCode(((codigo - 97 - chave + 26) % 26) + 97);
         }
 
         decodificadodString += caractere;
