@@ -1,4 +1,4 @@
-import cipher from "./cipher";
+import cipher from "./cipher.js";
 
 function cifrar() { //declarando a função 
   console.log("entrei");
