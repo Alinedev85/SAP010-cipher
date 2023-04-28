@@ -1,7 +1,7 @@
 import cipher from "./cipher.js";
 
 function cifrar() { //declarando a função 
-  console.log("entrei");
+ 
   const mensagem = document.getElementById("mensagem").value; /* cria uma variavel e atribui o valor fornecido no campo de input*/
   const chave = parseInt(document.getElementById("chave").value);
   const codificado = cipher.encode(chave,mensagem);
@@ -21,5 +21,5 @@ function decifrar() {
 document.getElementById("bcifrar").addEventListener("click", cifrar); //executar a função
 document.getElementById("bdecifrar").addEventListener("click", decifrar);
 
-console.log(cipher);
+//console.log(cipher);
 
