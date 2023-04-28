@@ -10,14 +10,13 @@ const cipher = {
       let encodedString = "";
       for (let i = 0; i < texto.length; i++) {
         let caractere = texto[i];
-
-        if (caractere.match(/[A-Z]/i)) { //maiúscula, match=comparação 
-          const codigo = texto.charCodeAt(i);
+        const codigo = texto.charCodeAt(i);
+        if (caractere.match(/[A-Z]/)) { //maiúscula, match=comparação 
           if (codigo >= 65 && codigo <= 90);
-          caractere = String.fromCharCode(((codigo + 65 + chave) % 26) + 65);/* se vdd, ASCII - 65= letra alfabeto o resultado usa o operador modulo(%) para que esteja dentro do alfabeto*/
-        } else if (caractere.match(/[a-z]/i)) {
-          (codigo >= 97 && codigo <= 122);
-          caractere = String.fromCharCode(((codigo + 97 + chave) % 26) + 97);
+          caractere = String.fromCharCode(((codigo - 65 + chave) % 26) + 65);/* se vdd, ASCII - 65= letra alfabeto o resultado usa o operador modulo(%) para que esteja dentro do alfabeto*/
+        } else if (caractere.match(/[a-z]/)) {
+          if (codigo >= 97 && codigo <= 122);
+          caractere = String.fromCharCode(((codigo - 97 + chave) % 26) + 97);
         }
 
         encodedString += caractere;
@@ -36,14 +35,20 @@ const cipher = {
       let decodificadodString = "";
       for (let i = 0; i < texto.length; i++) {
         let caractere = texto[i];
+        const codigo = texto.charCodeAt(i);
+        if (caractere.match(/[A-Z]/)) {
+          if (codigo >= 65 && codigo <= 90) {
+            caractere = String.fromCharCode(((codigo + 65 - chave + 26) % 26) + 65);
+          }
+        } else if (caractere.match(/[a-z]/)) {
+          if (codigo >= 97 && codigo <= 122) {
+            let resultado = codigo - 97 -chave;
+            while(resultado < 0) {  //laço adicional de 26
+              resultado += 26;
+            }
+            caractere = String.fromCharCode(( resultado % 26) + 97);
 
-        if (caractere.match(/[A-Z]/i)) {
-          const codigo = texto.charCodeAt(i);
-          if (codigo >= 65 && codigo <= 90);
-          caractere = String.fromCharCode(((codigo + 65 - chave + 26) % 26) + 65);
-        } else if (caractere.match(/[a-z]/i)) {
-          (codigo >= 97 && codigo <= 122);
-          caractere = String.fromCharCode(((codigo - 97 - chave + 26) % 26) + 97);
+          }
         }
 
         decodificadodString += caractere;
