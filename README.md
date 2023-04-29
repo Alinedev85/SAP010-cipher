@@ -42,7 +42,7 @@ encontram-se entre os dez primeiros no ranking mundial. (https://www.weforum.org
 
 ## 5. Especificações Técnicas:
 
-* [ ok ] Possui uma interface que permite ao usuário criptografar edescriptografar.
+* [ ok ] Possui uma interface que permite ao usuário criptografar e descriptografar.
 * [ ok ] O projeto será entregue incluindo testes unitários dos métodos `cipher` (`encode` e `decode`).
 * [ ok ] O projeto será entregue livre de _erros_ de `eslint` (_warnings_ são ok).
 * [ ok ] O código do seu projeto será entregue no GitHub.
