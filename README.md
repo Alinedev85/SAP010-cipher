@@ -14,6 +14,10 @@ Este é um projeto que utiliza a cifra de César para codificar e aumentar a seg
 do site CLICK CESAR, uma plataforma voltada para assinaturas eletronicas e digitais.
 
 
+Devido à importância do tema tratado neste projeto, que envolve o envio de documentos, assinaturas e validade jurídica, foi optado por uma abordagem estética monocromática para transmitir seriedade e profissionalismo.
+
+
+
 ## 2. Tecnologias Utilizadas:
 
 * HTML
