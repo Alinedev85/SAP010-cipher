@@ -33,7 +33,7 @@ h1 {
 }
 
 .caixa{
- padding: 1px; /*espaço entre as coisas do cabeçalho*/
+ padding: 5px; /*espaço entre as coisas do cabeçalho*/
  border-bottom: 2px solid rgb(0, 0, 0);
 }
 
@@ -63,17 +63,20 @@ body {
 }
 
 .box {
+    
     text-align: center;
-    margin: 20px;
+    margin: 1px;
     cursor:pointer; /*mãozinha do mouse*/
     display: inline-block;  
+
 }
 
+
 footer {
-    background-color: #474545f8;
+    background-color: #5d5b5bf8;
     color: rgb(0, 0, 0);
-    margin-top: 1px;
+    margin-top: 15px;
     text-align: center;
-    line-height: 50px;
+    line-height: 30px;
 
 }
