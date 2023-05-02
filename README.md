@@ -36,7 +36,7 @@ Caso ele esqueça qual foi a senha criptografada ele terá a opção de decifrar
 
 ## 4. O produto criado está resolvendo os problemas?
 
-Após a implementação da codificação de senhas, os índices de ataques cibernéticos e roubo de senhas reduziram em 70%. Esses números são especialmente significativos, considerando que crimes cibernéticos estão entre os dez principais riscos globais, de acordo com o relatório Global Risks Report de 2023. Estamos continuamente trabalhando em melhorias para garantir a segurança dos nossos usuários. (Fonte: https://www.weforum.org/reports/global-risks-report-2023/)
+Sim, após a implementação da codificação de senhas, os índices de ataques cibernéticos e roubo de senhas reduziram em 70%. Esses números são especialmente significativos, considerando que crimes cibernéticos estão entre os dez principais riscos globais, de acordo com o relatório Global Risks Report de 2023. Estamos continuamente trabalhando em melhorias para garantir a segurança dos nossos usuários. (Fonte: https://www.weforum.org/reports/global-risks-report-2023/)
 
 ## 5. Especificações Técnicas:
 
